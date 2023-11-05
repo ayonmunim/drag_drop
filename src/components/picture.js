@@ -1,10 +1,8 @@
 import React from 'react';
 
-
-const Picture = ({ url}) => {
+const Picture = ({url}) => {
     return (
-        <img 
-           
+        <img
             className='w-full h-full object-cover rounded-xl '
             src={url} 
             alt='draggable'
