@@ -1,1 +1,4 @@
-Live link :https://sparkling-buttercream-18a8fd.netlify.app/
+Live link: https://image-gallery-ecart.netlify.app/
+
+
+**For npm start’ you need to command  npm install
