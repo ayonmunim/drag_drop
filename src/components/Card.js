@@ -98,9 +98,7 @@ export const Card = ({ id, url, text, index }) => {
         cursor: 'pointer',
         height: 'full',
         position: 'relative',
-         
-          borderRadius:'12px',
-       
+        borderRadius:'12px',
         opacity: isDragging ? 2 : 1
       }}
       data-handler-id={handlerId}
