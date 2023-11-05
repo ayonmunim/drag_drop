@@ -28,11 +28,11 @@ const HTML5toTouch = {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <DndProvider backend={MultiBackend} options={HTML5toTouch}>
-  <Provider store={store}>
-    <App />
-  </Provider>
-</DndProvider>
+    <DndProvider backend={MultiBackend} options={HTML5toTouch}>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </DndProvider>
   </React.StrictMode>
 );
 
