@@ -1,1 +1,1 @@
-Live link :https://sparkling-buttercream-18a8fd.netlify.app/
+Live link: https://image-gallery-ecart.netlify.app/
