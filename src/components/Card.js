@@ -6,14 +6,6 @@ import Picture from './picture.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { moveCard, setSelectedId } from '../store/pictureSlice.js';
 
-// Define the style object outside the component to avoid recreating it on every render
-const style = {
-  border: '1px solid gray',
-  cursor: 'pointer',
-  height: 'full',
-  position: 'relative',
-  borderRadius:'3px'
-};
 
 // Card component
 export const Card = ({ id, url, text, index }) => {
@@ -92,20 +84,31 @@ export const Card = ({ id, url, text, index }) => {
   // Check if the id of the card is in the selected id array
   const checkedTrue = selectedid.includes(id);
 
+
+
   // Render the card
   return (
     <div
-      className={`col-span-6 sm:col-span-3  lg:col-span-2`}
+      className={` col-span-6 sm:col-span-3  lg:col-span-2`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       ref={ref}
-      style={style}
+      style={{
+        border: '1px solid grey',
+        cursor: 'pointer',
+        height: 'full',
+        position: 'relative',
+         
+          borderRadius:'12px',
+       
+        opacity: isDragging ? 2 : 1
+      }}
       data-handler-id={handlerId}
     >
 
 
   {isHovered || checkedTrue ? (
-  <div className='absolute bg-neutral-600/20 w-full h-full p-4'>
+  <div className={`absolute rounded-xl  ${checkedTrue ?  'bg-[#F3F5F4]' :'bg-[#777777]' } w-full h-full p-4 opacity-80`}>
     <input
       type='checkbox'
       name='delete'
@@ -115,6 +118,6 @@ export const Card = ({ id, url, text, index }) => {
   </div>
 ) : null}
       <Picture url={url} />
-    </div>
+  </div>
   );
 };

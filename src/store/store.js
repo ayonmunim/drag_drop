@@ -4,7 +4,6 @@ import {pictureSlice} from './pictureSlice';
 
 const store = configureStore({
   reducer: {
- 
     pictureItem:pictureSlice.reducer
   }
 });

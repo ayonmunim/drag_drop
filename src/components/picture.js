@@ -5,7 +5,7 @@ const Picture = ({ url, id }) => {
     return (
         <img 
            
-            className='w-full h-full object-cover'
+            className='w-full h-full object-cover rounded-xl '
             src={url} 
             alt='draggable'
         />
