@@ -106,15 +106,15 @@ export const Card = ({ id, url, text, index }) => {
 
 
   {isHovered || checkedTrue ? (
-  <div className={`absolute rounded-xl  ${checkedTrue ?  'bg-[#F3F5F4]' :'bg-[#777777]' } w-full h-full p-4 opacity-80`}>
-    <input
-      type='checkbox'
-      name='delete'
-      checked={checkedTrue}
-      onChange={handleCheckboxChange}
-    />
-  </div>
-) : null}
+    <div className={`absolute rounded-xl  ${checkedTrue ?  'bg-[#F3F5F4]' :'bg-[#777777]' } w-full h-full p-4 opacity-80`}>
+      <input
+        type='checkbox'
+        name='delete'
+        checked={checkedTrue}
+        onChange={handleCheckboxChange}
+      />
+    </div>
+  ) : null}
       <Picture url={url} />
   </div>
   );
