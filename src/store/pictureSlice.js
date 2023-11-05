@@ -5,8 +5,7 @@ import { cards } from "./dummytext";
 const initialState = {
     cards : cards,
     board:[],
-      
-      selectedid:[]
+    selectedid:[]
 }
 
 
