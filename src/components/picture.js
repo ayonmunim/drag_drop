@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Picture = ({ url, id }) => {
+const Picture = ({ url}) => {
     return (
         <img 
            
